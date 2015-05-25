@@ -2,15 +2,15 @@
 #![feature(ip_addr)]
 #![feature(scoped)]
 use std::thread;
+use std::collections::BTreeSet;
 
 fn main() {
 	println!("Hello, world!");
-	let mut host_vec = Vec::new();
+	let mut host_vec = BTreeSet::new();
 	for host in std::net::lookup_host("tfm.nu").unwrap() {
-		let ip_addy = host.unwrap().ip();
-		if !host_vec.contains(&ip_addy)  {
-			host_vec.push(ip_addy);
-			println!("found address: {}", ip_addy);
-		}
+		host_vec.insert(host.unwrap().ip());
+	}
+	for it in host_vec {
+		println!("found address: {}", it);
 	}
 }
