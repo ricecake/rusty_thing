@@ -3,6 +3,8 @@ name = "rusty_thing"
 version = "0.1.0"
 dependencies = [
  "dns 0.0.3-pre1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hlua 0.1.5 (git+https://github.com/indefini/hlua.git)",
+ "ozone 0.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "websocket 0.12.2 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
@@ -36,6 +38,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 name = "gcc"
 version = "0.3.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "hlua"
+version = "0.1.5"
+source = "git+https://github.com/indefini/hlua.git#31bfba5fff059ce12b35334728476e5c54a3a218"
+dependencies = [
+ "libc 0.1.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "lua52-sys 0.0.4 (git+https://github.com/indefini/hlua.git)",
+]
 
 [[package]]
 name = "hpack"
@@ -112,6 +123,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "lua52-sys"
+version = "0.0.4"
+source = "git+https://github.com/indefini/hlua.git#31bfba5fff059ce12b35334728476e5c54a3a218"
+dependencies = [
+ "gcc 0.3.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "libc 0.1.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "pkg-config 0.3.5 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
 name = "matches"
 version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -153,6 +174,11 @@ dependencies = [
  "libressl-pnacl-sys 2.1.5 (registry+https://github.com/rust-lang/crates.io-index)",
  "pkg-config 0.3.5 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
+
+[[package]]
+name = "ozone"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "pkg-config"

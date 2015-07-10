@@ -7,3 +7,8 @@ authors = ["Sebastian Green-Husted <ricecake@tfm.nu>"]
 dns = "*"
 [dependencies.websocket]
 websocket = "*"
+[dependencies.hlua]
+git = "https://github.com/indefini/hlua.git"
+hlua = "*"
+[dependencies.ozone]
+ozone = "*"
