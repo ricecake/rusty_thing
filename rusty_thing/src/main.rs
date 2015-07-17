@@ -24,3 +24,13 @@ fn main() {
 	//}
 	println!("the number is: {}", test_map.values().next().unwrap());
 }
+
+structure Thing {
+    name: String
+}
+
+impl Thing {
+    pub fn new() -> Thing {
+        Thing { name: "ear ball" };
+    }
+}
