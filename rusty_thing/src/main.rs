@@ -33,4 +33,9 @@ impl Thing {
     pub fn new() -> Thing {
         Thing { name: "ear ball" };
     }
+
+    pub fn frobnicate(&mut self) -> Thing {
+    	self.name = "FROBNICATED";
+    	return self;
+    }
 }
