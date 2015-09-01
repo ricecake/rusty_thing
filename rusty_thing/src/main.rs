@@ -16,12 +16,13 @@ fn main() {
 	}
 
 	let mut test_map = BTreeMap::new();
-	//for i in 1..25 {
+	for i in 1..25 {
 		test_map.insert(3, 3);
 		test_map.insert(5, 5);
 		test_map.insert(8, 8);
 		test_map.insert(1, 1);
-	//}
+		test_map.insert(i, 3*i);
+	}
 	println!("the number is: {}", test_map.values().next().unwrap());
 }
 
