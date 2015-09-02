@@ -3,12 +3,10 @@ name = "rusty_thing"
 version = "0.1.0"
 authors = ["Sebastian Green-Husted <ricecake@tfm.nu>"]
 
-[dependencies.dns]
-dns = "*"
 [dependencies.websocket]
 websocket = "*"
 [dependencies.hlua]
-git = "https://github.com/indefini/hlua.git"
+git = "https://github.com/tomaka/hlua.git"
 hlua = "*"
 [dependencies.ozone]
 ozone = "*"
